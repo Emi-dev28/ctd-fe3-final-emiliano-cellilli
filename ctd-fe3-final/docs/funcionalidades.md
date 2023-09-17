@@ -66,7 +66,7 @@ En esta pagina deberán implementar un [Form](/src/Components/Form.jsx) (con sus
 
 ### Pagina 3: Detalle del dentista
 
-En esta página se deberá mostrar un detalle de un dentista individual de la API.
+rmdir En esta página se deberá mostrar un detalle de un dentista individual de la API.
 
 Se deberá tener en cuenta lo siguiente:
 

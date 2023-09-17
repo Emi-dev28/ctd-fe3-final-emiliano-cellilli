@@ -1,0 +1,41 @@
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    padding: 20px;
+    background-color: inherit;
+    
+    cursor:pointer;
+}
+.footer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1F271B;
+    width: 100%;
+    max-width:100%;
+    background-color: inherit;
+    box-sh
+}
+.footer p{
+    margin-top: 25px; 
+}
+footer{
+    width: 100%;
+    margin: 0;
+}
+.footer-theme {
+    color:white;
+    width: 100%;
+    
+}
+.footer-color{
+    background-color: #2D3131;
+    margin: 0;
+    color: white;
+}

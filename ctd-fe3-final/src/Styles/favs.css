@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Playfair+Display:wght@500&family=Roboto:wght@500&family=Titillium+Web:wght@300&display=swap");
+.title {
+  padding: 20px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #b2b292;
+}
+.error {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 13px;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  color: red;
+  
+}
+.form {
+  display: flex;
+  width: auto;
+  background-color: #F1F1EF;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 30px;
+  gap: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #cfcecd;
+  border-right: 2px solid #cfcecd;
+  border-top: 2px solid #cfcecd;
+  border-left: 2px solid #cfcecd;
+}
+.submit {
+  padding: 7px;
+  width: 100px;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #e7ebc7;
+  font-family: 'Roboto', sans-serif;
+  color: #454545;
+  font-size: 14px;
+  cursor: pointer;
+}
+.position{
+    position: relative;
+    right:70px;
+}
+.submit:hover {
+  background-color: #E0E3B5;
+  transition: 0.7s;
+    }
+
+.campo {
+  padding: 7px;
+}
+
+.sent {
+  width: auto;
+  padding: 10px;
+  margin: 10px;
+}
+form {
+  gap: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+}
+.campo {
+  width: 220px;
+}
+label input {
+  width: auto;
+  border: 2px solid #d9d2b6;
+  border-radius: 8px;
+  padding: 3px;
+  margin: 5px;
+  gap: 10px;
+}

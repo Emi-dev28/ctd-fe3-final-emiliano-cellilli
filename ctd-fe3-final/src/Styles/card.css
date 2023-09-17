@@ -1,0 +1,177 @@
+.dashicons,
+.dashicons-before:before {
+  font-family: dashicons;
+  display: inline-block;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+  text-align: center;
+  transition: color 0.1s ease-in;
+}
+Link {
+}
+.cards {
+  list-style-type: none;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.card {
+  text-align: center;
+  gap: 0.7rem;
+  height: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #fbfaf8;
+  font-size: 12px;
+  color: #5d5d5d;
+  height: 260px;
+}
+.card-theme {
+  background-color: #141414;
+  color: #ADADAD;
+}
+
+.card:hover {
+  background-color: #ADADAD;
+}
+.title {
+  font-family: sans-serif;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #b2b292;
+  font-weight: 500;
+  cursor: ;
+}
+.title:hover {
+  transition: 0.5s;
+}
+.card:hover {
+  background-color: #e7decd;
+}
+.card.default {
+  border-bottom: 4px solid #cfcecd;
+  border-right: 3px solid #cfcecd;
+}
+.card.pulse {
+  transition: 0.5s;
+}
+.cards img {
+  border-radius: 8px;
+  width: 80%;
+}
+.container {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: none;
+}
+.theme {
+  background-color: #1b131b;
+}
+.span-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.button-fav{
+  overflow: hidden;
+  position: relative;
+  bottom: 48px;
+  left: 45px;
+  cursor:pointer;
+}
+.fav-btn {
+  display: flex;
+  width: 100%;
+  background-color: inherit;
+  height: 100%;
+  justify-content: flex-end;
+
+  align-items: flex-end;
+}
+
+.bg {
+  position: relative;
+  left: 3.6rem;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  color: #cbcdce;
+  margin: 0;
+
+  &.active {
+    color: #dc3232;
+  }
+  &:hover {
+    animation: bg-hover 0.3s infinite alternate;
+  }
+  &.is_animating {
+    animation: bg-anime 0.3s;
+  }
+}
+.bg.active {
+  color: #dc3232;
+}
+.bg:hover {
+  animation: bg-hover 0.3s infinite alternate;
+}
+.bg.is_animating {
+  animation: bg-anime 0.3s;
+}
+@keyframes bg-anime {
+  0% {
+    opacity: 1;
+    font-size: ms(0);
+    -webkit-text-stroke-color: transparent;
+  }
+  25% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: ms(-2);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dc3232;
+  }
+  75% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: ms(3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dc3232;
+  }
+  100% {
+    opacity: 1;
+    font-size: ms(2);
+    -webkit-text-stroke-color: transparent;
+  }
+}
+
+@keyframes bg-hover {
+  from {
+    font-size: ms(3);
+  }
+  80% {
+    font-size: ms(2);
+  }
+}

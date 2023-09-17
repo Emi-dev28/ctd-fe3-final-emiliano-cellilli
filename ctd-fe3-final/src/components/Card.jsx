@@ -1,22 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+import { Link } from "react-router-dom";
+import { useGlobalStates } from "./utils/context";
+import "../Styles/card.css";
+import { AiOutlineHeart } from "react-icons/ai";
 
 
-const Card = ({ name, username, id }) => {
+const Card = ({data}) => {
+  // const {name, username, id} = useDoctor()
 
-  const addFav = ()=>{
-    // Aqui iria la logica para agregar la Card en el localStorage
-  }
+  const { state,dispatch } = useGlobalStates();
+  const addFav = (e) => {
+    e.preventDefault()
+    console.log("adding")
+    console.log(data.name)
+    dispatch({type: 'ADD_FAVS', payload: data})
+  };
+  const img_doctor = "./doctor.jpg";
 
   return (
-    <div className="card">
-        {/* En cada card deberan mostrar en name - username y el id */}
-
-        {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
-
-        {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-        <button onClick={addFav} className="favButton">Add fav</button>
-    </div>
-  );
+          <li>
+            <Link to={`/details/${data.id}`} >
+              <div className={state.theme ? `card default pulse card-theme` : `card default pulse`}>
+                <h3>{data.name}</h3>
+                <img className="img_" src={img_doctor} alt={data.name} />
+                <span>{data.username}</span>
+                <span>{data.id}</span>
+              </div>
+            </Link>
+            
+            <button className="button-fav" onClick={addFav}>⭐
+            </button>
+          </li>
+        );
 };
 
 export default Card;
